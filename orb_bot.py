@@ -419,7 +419,7 @@ PML: ${monthly_levels['pml']:.2f}
 
 def scan_stocks():
     """Main TRUE ORB scanning function"""
-    print(f"\\n🎯 TRUE ORB Scan at {datetime.now().strftime('%H:%M:%S')}")
+    print(f"\n🎯 TRUE ORB Scan at {datetime.now().strftime('%H:%M:%S')}")
     
     for symbol in WATCHLIST:
         try:
@@ -478,7 +478,7 @@ def main():
     # Run immediate scan
     scan_stocks()
     
-    print("\\n🟢 TRUE ORB Bot is running! Press Ctrl+C to stop.")
+    print("\n🟢 TRUE ORB Bot is running! Press Ctrl+C to stop.")
     
     # Continuous scanning every minute
     try:
@@ -495,8 +495,8 @@ def main():
             
             time.sleep(60)  # Wait 1 minute
     except KeyboardInterrupt:
-        print("\\n🛑 TRUE ORB Bot stopped by user.")
-        send_telegram_alert("🛑 <b>TRASASASA - TRUE ORB Bot Stopped</b>\\n\\nBot has been manually stopped.")
+        print("\n🛑 TRUE ORB Bot stopped by user.")
+        send_telegram_alert("🛑 <b>TRASASASA - TRUE ORB Bot Stopped</b>\n\nBot has been manually stopped.")
 
 if __name__ == "__main__":
     main()
