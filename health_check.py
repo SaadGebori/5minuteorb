@@ -20,7 +20,7 @@ class HealthHandler(BaseHTTPRequestHandler):
             health_data = {
                 "status": "healthy",
                 "timestamp": datetime.now().isoformat(),
-                "service": "OBR Trading Bot",
+                "service": "TRUE ORB Trading Bot",
                 "version": "1.0.0"
             }
             
